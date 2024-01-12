@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Example</h1>
+    <!-- Action attribute allows us to specify how the form data will be processed -->
+    <form action="#">
+        <!-- The "for" atrribute must match the value of the "id" attribute of the associated label-->
+        <label for="nameFields">Name:</label>
+        <input id="nameFields" type="text" placeholder="John Smith...">
+
+        <br>
+
+        <label for="pass">Password:</label>
+        <input id="pass" type="password" required>
+
+        <br>
+
+        <label for="mail">Email:</label>
+        <input id="mail" type="text">
+
+        <br>
+
+        <label for="phone">Phone Number:</label>
+        <input id="phone" type="tel" placeholder="(+44)854785747">
+
+        <br>
+
+        <label for="dob">DOB:</label>
+        <input id="dob" type="date">
+
+        <br>
+
+        <!-- Usually would show calendar here, but not in every browser -->
+
+        <input type="reset" value="Clear">
+        
+        <br>
+
+        <input value="Submit" type="submit">
+
+    </form>
+    
+</body>
+</html>
