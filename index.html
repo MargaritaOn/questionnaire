@@ -3,47 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forms</title>
+    <title>Questionnaire</title>
+     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"> -->
 </head>
 <body>
-    <h1>Example</h1>
-    <!-- Action attribute allows us to specify how the form data will be processed -->
+    <h1>Morning routine</h1>
     <form action="#">
-        <!-- The "for" atrribute must match the value of the "id" attribute of the associated label-->
-        <label for="nameFields">Name:</label>
-        <input id="nameFields" type="text" placeholder="John Smith...">
+    
+        <h3>Morning check-list:</h3>
+        <label for="teeth">brushed your teeth</label>
+        <input id="teeth" type="checkbox" name="teeth">
+        <br>
+
+        <label for="coffee">had your morning coffee</label>
+        <input id="coffee" type="checkbox" name="coffee">
+        <br>
+
+        <label for="breakfast">had your breakfast</label>
+        <input id="breakfast" type="checkbox" name="breakfast">
+
+
 
         <br>
 
-        <label for="pass">Password:</label>
-        <input id="pass" type="password" required>
+        <h3>Please add your morning hair picture:</h3>
+
+
+        <label for="picture">Choose from file:</label>
+        <input id="picure" type="file" name="picture">
 
         <br>
 
-        <label for="mail">Email:</label>
-        <input id="mail" type="text">
+        <h3>Write about your morning experience:</h3>
+        <textarea name="mornings" id="description" cols="40" rows="5" placeholder="I woke up and tripped on my slippers..."></textarea>
 
         <br>
 
-        <label for="phone">Phone Number:</label>
-        <input id="phone" type="tel" placeholder="(+44)854785747">
+        <h3>How was the weather this morning?</h3>
+        <select name="weather" id="weather">
+            <option value="awful">Awful!</option>
+            <option value="wet">Wet...</option>
+            <option value="lovely">Lovely</option>
+        </select>
 
         <br>
 
-        <label for="dob">DOB:</label>
-        <input id="dob" type="date">
+        <h3 for="recommend">Would you recommend this questionnaire to a friend?</h3>
+        <input id="yes" type="radio"  name="foo" >
+        <label for="reply">Yes</label>
 
-        <br>
-
-        <!-- Usually would show calendar here, but not in every browser -->
-
-        <input type="reset" value="Clear">
+        <input id="no" type="radio"  name="foo">
+        <label for="reply">No</label>
         
+
         <br>
-
-        <input value="Submit" type="submit">
-
-    </form>
     
 </body>
 </html>
